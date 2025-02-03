@@ -19,4 +19,5 @@ export class Api {
 
   @Column({ default: "ej påbörjad" })
   isCompleted: string;
+  
 }
