@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, Timestamp } from 'typeorm';
 
 //Ett schema för en MySql tabell. Inte så mycket att säga mer än att den skapas enligt dessa specs i MySql-databasen.
 //TYPEORM ger säkerhet mot SQL-injektioner.
@@ -14,10 +14,10 @@ export class Api {
   @Column('text')
   description: string;
 
-  @Column({ default: Date.now })
+  @Column({ default: Timestamp })
   date: Date;
 
   @Column({ default: "ej påbörjad" })
   isCompleted: string;
-  
+
 }
