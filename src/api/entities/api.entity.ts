@@ -11,10 +11,9 @@ export class Api {
   title: string;
 
   @Column({ length: 200 })
-  @Column('text')
   description: string;
 
-  @Column({ default: Timestamp })
+  @Column({ default: () => 'CURRENT_TIMESTAMP' })
   date: Date;
 
   @Column({ default: "ej påbörjad" })
