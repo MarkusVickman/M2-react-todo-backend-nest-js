@@ -9,7 +9,6 @@ export class CreateApiDto {
     title: string;
 
     @IsString()
-    @Max(200)
     @IsOptional()
     description: string;
 
