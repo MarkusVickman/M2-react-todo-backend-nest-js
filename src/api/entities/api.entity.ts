@@ -21,3 +21,5 @@ export class Api {
   isCompleted: string;
 
 }
+
+//VARFÖR triggar inte
