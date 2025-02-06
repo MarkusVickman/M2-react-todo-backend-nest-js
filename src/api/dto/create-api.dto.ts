@@ -6,9 +6,6 @@ import { IsString, IsInt, Min, Max, Length, IsNotEmpty, IsDate, IsOptional } fro
 export class CreateApiDto {
 
     @IsString()
-    @Max(200)
-    @IsNotEmpty()
-    @Min(3)
     title: string;
 
     @IsString()
